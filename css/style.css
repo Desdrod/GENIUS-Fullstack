@@ -35,6 +35,10 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: Poppins, sans-serif;
@@ -49,8 +53,26 @@ address {
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.section {
+  padding: 48px 0;
+}
 /* Button */
 .button {
+  padding: 16px 32px;
   border-radius: 8px;
   border: 2px solid var(--color-brand-light);
   background: var(--color-brand-light);
@@ -74,7 +96,12 @@ address {
 }
 
 /* Hero */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
+  margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -85,6 +112,15 @@ address {
 }
 
 /* Advantage переваги*/
+.visual-hiden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .advantages-list {
   color: var(--color-primary-light);
   background-color: #819b57; /*HEX value*/
@@ -96,6 +132,13 @@ address {
 }
 
 /* traditions sections */
+.traditions_section {
+  padding-top: 96px;
+}
+.tradition-title {
+  margin-bottom: 42px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -114,12 +157,19 @@ address {
 }
 
 /* Chef section */
+.chefs-title {
+  margin-bottom: 80px;
+}
 .chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
 /* Formats */
+.formats-title {
+  margin-bottom: 80px;
+}
 .format-title {
   font-size: 24px;
   font-weight: 600;
@@ -128,6 +178,10 @@ address {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+/* Contacts */
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* Footer */
