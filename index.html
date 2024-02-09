@@ -15,22 +15,24 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions_section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chef_section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats_section">Формати</a></li>
-            <li><a class="link" href="#contact_section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions_section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chef_section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats_section">Формати</a></li>
+              <li><a class="link" href="#contact_section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Замовити дзвінок</button>
+        </div>
       </div>
     </header>
     <main>
@@ -43,7 +45,7 @@
         </div>
       </section>
       <!-- 2 section -->
-      <section>
+      <section class="adventages-section">
         <div class="container">
           <h2 class="visual-hiden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -55,21 +57,28 @@
       </section>
       <section class="section traditions_section" id="traditions_section">
         <div class="container">
-          <h2 class="tradition-title section-title">Новий формат традицій</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — це пекарня, яка
-            взяла все найкраще, і зберегла смак традиційної випічки та
-            натуральність інгредієнтів.
-          </p>
-          <p class="traditions-text">
-            Ми працюємо як найвідоміші мережі—
-            <span class="brand">5 хвилин і замовлення готове.</span> А ще у
-            наших пекарень стильний дизайн та висока якість обслуговування!
-          </p>
-          <img
-            src="./images/baker-man.jpg"
-            alt="Чоловік пекар дивиться на батони із посмішкою"
-          />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="tradition-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="traditions-text">
+                Ми працюємо як найвідоміші мережі—<br />
+                <span class="brand">5 хвилин і замовлення готове</span>. <br />
+                А ще у наших пекарень стильний дизайн <br />та висока якість
+                обслуговування!
+              </p>
+            </div>
+            <img
+              src="./images/baker-man.jpg"
+              alt="Чоловік пекар дивиться на батони із посмішкою"
+            />
+          </div>
         </div>
       </section>
       <!-- 3 section -->
@@ -107,8 +116,8 @@
       <section class="section" id="formats_section">
         <div class="container">
           <h2 class="formats-title section-title">Формати</h2>
-          <ul>
-            <li>
+          <ul class="formats-list">
+            <li class="format-card">
               <arcticle>
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
@@ -122,7 +131,7 @@
                 </div>
               </arcticle>
             </li>
-            <li>
+            <li class="format-card">
               <arcticle>
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
@@ -133,7 +142,7 @@
                 </div>
               </arcticle>
             </li>
-            <li>
+            <li class="format-card">
               <arcticle>
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
