@@ -246,7 +246,8 @@ p {
   border: 1px solid lightgray; /*remove*/
   border-radius: 16px;
   flex-basis: calc((100% - 40px) / 3);
-  background: linear-gradient(
+  background-image: url(../images/walrus-format.png);
+  background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55.21%,
     rgba(49, 38, 26, 0.71) 72.92%,
@@ -257,6 +258,30 @@ p {
   background-position: center;
   background-size: cover;
 }
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: var(--color-primary-dark);
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--color-primary-dark);
+}
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+.carousel-button:last-child {
+  rotate: 180;
+}
+
 .formats-title {
   text-align: center;
   margin-bottom: 80px;
@@ -288,6 +313,12 @@ p {
 }
 .address-link:hover {
   color: var(--color-brand-light);
+}
+.address-icon {
+  fill: var(--color-primary-light);
+}
+.address-icon:hover {
+  fill: var(--color-brand-light);
 }
 .address-copyright {
   color: #a18268;
